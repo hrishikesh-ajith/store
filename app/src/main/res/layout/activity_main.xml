@@ -45,6 +45,7 @@
         android:layout_height="47dp"
         android:fontFamily="@font/brux"
         android:text="Store name"
+        android:textColor="#FFFF"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,7 +60,7 @@
         android:layout_height="59dp"
 
         android:background="@drawable/round_border"
-        android:text="Sign Up"
+        android:text="Sign In"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
