@@ -14,10 +14,12 @@ package com.example.store;
 
 public class frontscreen extends AppCompatActivity {
     Button callsignup;
+    Button callhome;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         callsignup=findViewById(R.id.button3);
 
@@ -28,5 +30,15 @@ public class frontscreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        callhome=findViewById(R.id.button);
+        callhome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(frontscreen.this,homescreen.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
