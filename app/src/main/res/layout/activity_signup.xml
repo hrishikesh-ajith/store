@@ -33,7 +33,7 @@
         ></TextView>
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/reg_fullname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -44,46 +44,53 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/round_border"/>
+
     <EditText
+        android:id="@+id/reg_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/round_border"
-        android:padding="15dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_border"
         android:hint="Username"
-                                            ></EditText>
+        android:padding="15dp"></EditText>
+
     <EditText
+        android:id="@+id/reg_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/round_border"
-        android:padding="15dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_marginTop="15dp"
-        android:hint="Email"></EditText>
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_border"
+        android:hint="Email"
+        android:padding="15dp"></EditText>
+
     <EditText
+        android:id="@+id/reg_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/round_border"
-        android:padding="15dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_marginTop="15dp"
-        android:hint="Phone No"></EditText>
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_border"
+        android:hint="Phone No"
+        android:padding="15dp"></EditText>
+
     <EditText
+        android:id="@+id/reg_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/round_border"
-        android:padding="15dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_marginTop="15dp"
-        android:hint="Password"></EditText>
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_border"
+        android:hint="Password"
+        android:padding="15dp"></EditText>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/reg_signupbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/roundcolor_border"
