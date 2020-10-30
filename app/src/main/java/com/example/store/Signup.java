@@ -28,11 +28,27 @@ public class Signup extends AppCompatActivity {
         regEmail=findViewById(R.id.reg_email);
         regPhoneNo=findViewById(R.id.reg_phone);
         regPassword=findViewById(R.id.reg_password);
+        regBtn=findViewById(R.id.reg_signupbutton);
 
         regBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 rootNode = FirebaseDatabase.getInstance();
+                reference =rootNode.getReference("users");
+                //all the values from text fields
+                String name=regName.getText().toString();
+                String username=regUsername.getText().toString();
+                String email=regEmail.getText().toString();
+                String phoneNo=regPhoneNo.getText().toString();
+                String password=regPassword.getText().toString();
+
+
+                UserHelperClass helperClass=new UserHelperClass(name,username,email,phoneNo,password);
+
+                reference.child(phoneNo).setValue(helperClass);
+
+
+
 
             }
         });
