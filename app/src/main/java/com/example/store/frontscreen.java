@@ -61,7 +61,7 @@ public class frontscreen extends AppCompatActivity {
                             String passwordfromDB = dataSnapshot.getValue(String.class);
                             if(passwordfromDB.equals(passwordfromuser))
                             {
-                                Intent intent=new Intent(frontscreen.this,homescreen.class);
+                                Intent intent=new Intent(frontscreen.this,campusselect.class);
                                 startActivity(intent);
                             }
                         }
