@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".campusselect"></activity>
+        <activity android:name=".shop_list_keng"></activity>
+        <activity android:name=".campusselect" />
         <activity android:name=".homescreen" />
         <activity android:name=".Signup" />
         <activity android:name=".frontscreen" />
