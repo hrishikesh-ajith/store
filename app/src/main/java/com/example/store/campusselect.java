@@ -15,7 +15,17 @@ public class campusselect extends AppCompatActivity {
     }
 
     public void openkengeri(View view) {
-        Intent send = new Intent(campusselect.this, shop_list_keng.class);
+        Intent send = new Intent(campusselect.this, shop_list.class);
+        startActivity(send);
+    }
+
+    public void openmain(View view) {
+        Intent send = new Intent(campusselect.this, shop_list.class);
+        startActivity(send);
+    }
+
+    public void openbgr(View view) {
+        Intent send = new Intent(campusselect.this, shop_list.class);
         startActivity(send);
     }
 }

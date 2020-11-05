@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class shop_list_keng extends AppCompatActivity {
+public class stationery_list extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shop_list_keng);
+        setContentView(R.layout.activity_stationery_list);
     }
 }
