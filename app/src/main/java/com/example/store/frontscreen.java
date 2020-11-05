@@ -35,10 +35,14 @@ public class frontscreen extends AppCompatActivity {
         username=findViewById(R.id.log_username);
         password=findViewById(R.id.log_password);
         btnlogin=findViewById(R.id.button);
+        callsignup=findViewById(R.id.button3);
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String usernamefromuser=username.getText().toString();
+
+
+                /*
+                final String usernamefromuser=username.getText().toString();
                 final String passwordfromuser=password.getText().toString();
 
 
@@ -52,7 +56,9 @@ public class frontscreen extends AppCompatActivity {
                     checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            String passwordfromDB=dataSnapshot.child(passwordfromuser).child("password").getValue(String.class);
+                            dataSnapshot.child(passwordfromuser);
+                            dataSnapshot.child("password");
+                            String passwordfromDB = dataSnapshot.getValue(String.class);
                             if(passwordfromDB.equals(passwordfromuser))
                             {
                                 Intent intent=new Intent(frontscreen.this,campusselect.class);
@@ -66,7 +72,23 @@ public class frontscreen extends AppCompatActivity {
                         }
                     });
                 }
+            */
 
+                Intent intent =new Intent(frontscreen.this, campusselect.class);
+                startActivity(intent);
+
+
+
+
+
+            }
+        });
+
+        callsignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(frontscreen.this,Signup.class);
+                startActivity(intent);
             }
         });
 
