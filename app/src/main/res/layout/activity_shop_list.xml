@@ -10,7 +10,9 @@
         android:id="@+id/linearLayout2"
         android:layout_width="405dp"
         android:layout_height="72dp"
+        android:layout_marginBottom="4dp"
         android:background="@color/mainaccent"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -53,12 +55,12 @@
         android:layout_height="180dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="475dp"
+        android:onClick="openstationery"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:srcCompat="@drawable/always"
-        android:onClick="openstationery"/>
+        app:srcCompat="@drawable/always" />
 
     <ImageView
         android:id="@+id/imageView7"
