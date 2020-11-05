@@ -8,10 +8,12 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="355dp"
-        android:layout_height="87dp"
+        android:layout_width="400dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="0dp"
         android:background="@color/mainaccent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
