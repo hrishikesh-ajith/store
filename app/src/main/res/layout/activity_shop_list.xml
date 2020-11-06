@@ -81,12 +81,12 @@
         android:layout_height="171dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:onClick="opensnack"
+        android:onClick="openstationery"
         app:layout_constraintBottom_toTopOf="@+id/imageView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:srcCompat="@drawable/take_a_break" />
+        app:srcCompat="@drawable/stats_here" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
