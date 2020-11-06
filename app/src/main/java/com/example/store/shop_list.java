@@ -20,8 +20,4 @@ public class shop_list extends AppCompatActivity {
 
     }
 
-    public void opensnack(View view) {
-        Intent send = new Intent(shop_list.this, snack_list.class);
-        startActivity(send);
-    }
 }
